@@ -1,0 +1,465 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "poppins", sans-serif;
+  background-color: #EEF1FF;
+  scroll-behavior: smooth;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* <========= Global Classes =========> */
+
+.container {
+  height: calc(95vh - 110px);
+  width: 30rem;
+  margin: 120px auto 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & h1 {
+    color: #064663;
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+
+/* <========= Navigation Bar styles =========> */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  background-color: #D2DAFF;
+  box-shadow: 0 5px 15px rgba(170, 196, 255, 0.363);
+  min-height: 70px;
+  width: 70%;
+  border-radius: 13px;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.nav__head a {
+  text-decoration: none;
+  color: #064663;
+  font-size: 18px;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    color: #000000
+  }
+}
+
+.nav__join button {
+  border: none;
+  font-family: "poppins", sans-serif;
+  height: 30px;
+  width: 90px;
+  border-radius: 6px;
+  background-color: #6b6df0;
+  color: #EEF1FF;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 2px 10px rgba(54, 55, 122, 0.363);
+
+
+  &:hover {
+    background-color: #36377A;
+    font-size: 13px;
+  }
+}
+
+.nav__login {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+
+  & img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+}
+
+/* <========= Dashboard styles =========> */
+
+.post__btngroup {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 10px;
+
+  & .deletebtn {
+    background-color: #E64848;
+    border: none;
+    height: 30px;
+    width: 4.5rem;
+    color: white;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 7px 5px;
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+      background-color: #F32424;
+      font-size: 13px;
+    }
+  }
+
+  & .editbtn {
+    background-color: #81C6E8;
+    border: none;
+    height: 30px;
+    width: 4rem;
+    color: white;
+    border-radius: 5px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 7px 5px;
+    transition: 0.2s all ease-in-out;
+
+    &:hover {
+      background-color: #47B5FF;
+      font-size: 13px;
+    }
+  }
+}
+
+.signout-btn {
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 6px;
+  background-color: #323636;
+  color: #EEF1FF;
+  transition: all 0.4s ease-in-out;
+  cursor: pointer;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: #1B2430;
+    font-size: 13px;
+  }
+}
+
+/* <========= Message styles =========> */
+
+.message__card {
+  background-color: white;
+  width: 23rem;
+  padding: 10px 25px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgb(0 0 0 / 20%);
+
+  & .message__user {
+    display: flex;
+    align-items: flex-end;
+    column-gap: 7px;
+
+    & img {
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+    }
+
+    & h4 {
+      font-size: 16px;
+      font-weight: 600;
+      color: #064663;
+    }
+  }
+
+  & .message__desc {
+    padding: 5px 0;
+
+    & p {
+      font-size: 13px;
+    }
+  }
+
+  & .commentbtn {
+    height: 30px;
+    width: 35%;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 6px;
+    background-color: #323636;
+    color: #EEF1FF;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+
+    &:hover {
+      background-color: #1B2430;
+      font-size: 13px;
+    }
+  }
+}
+
+/* <========= Home Page styles =========> */
+
+
+/* <========= Login Page styles =========> */
+
+.login__container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login__card {
+  background-color: #F9F9F9;
+  padding: 20px;
+  min-width: 23rem;
+  margin: 0 auto;
+  height: 16rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 20%);
+
+  & .join__head {
+    font-size: 30px;
+    font-weight: 500;
+    color: #064663;
+  }
+
+  .join__desc {
+    & h3 {
+      font-size: 18px;
+      font-weight: 400;
+    }
+
+    & button {
+      height: 45px;
+      width: 100%;
+      border: none;
+      border-radius: 6px;
+      background-color: #323636;
+      color: #EEF1FF;
+      transition: all 0.4s ease-in-out;
+      cursor: pointer;
+      gap: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      &:hover {
+        background-color: #1B2430;
+        font-size: 13px;
+      }
+
+      & .google-logo {
+        font-size: 25px;
+      }
+
+    }
+  }
+
+}
+
+/* <========= Post Page styles =========> */
+
+.post__card {
+  background-color: #F9F9F9;
+  padding: 20px;
+  width: 24rem;
+  margin: 0 auto;
+  height: 25rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 0.2);
+}
+
+.post__form {
+  & h1 {
+    font-weight: 500;
+    font-size: 30px;
+    color: #064663;
+  }
+
+  .post__edit {
+    & h3 {
+      font-weight: 500;
+      color: #064663;
+    }
+
+    & textarea {
+      background-color: #082032;
+      color: #EEF1FF;
+      height: 9rem;
+      width: 100%;
+      border-radius: 10px;
+      padding: 10px 20px;
+      font-family: "poppins", sans-serif;
+      letter-spacing: 1px;
+    }
+
+    & .p-normal {
+      margin: 0;
+      font-size: 13px;
+      padding: 0 5px;
+      color: #6B6DF0;
+    }
+
+    & .p-exceeded {
+      color: #D45555;
+      font-weight: 600;
+    }
+  }
+
+  & button {
+    margin-top: 7px;
+    height: 40px;
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: #6B6DF0;
+    color: #EEF1FF;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    font-family: "poppins", sans-serif;
+
+    &:hover {
+      background-color: #36377A;
+      font-size: 13px;
+    }
+  }
+}
+
+/* <========= Comments Page styles =========> */
+
+.comment__section {
+  width: 23rem;
+  margin-top: 10px;
+}
+
+.comments__area {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5px;
+
+  & input {
+    width: 100%;
+    height: 2.3rem;
+    background-color: #082032;
+    color: #EEF1FF;
+    padding: 0 12px;
+    border: none;
+    border-radius: 5px;
+    font-family: "poppins", sans-serif;
+    letter-spacing: 1px;
+    box-shadow: 0 6px 15px rgb(0 0 0 / 20%);
+  }
+
+  & button {
+    height: 2.3rem;
+    width: 4rem;
+    display: inline-flex;
+    border: none;
+    border-radius: 5px;
+    background-color: #6B6DF0;
+    color: #EEF1FF;
+    transition: all 0.4s ease-in-out;
+    cursor: pointer;
+    font-family: "poppins", sans-serif;
+    box-shadow: 0 2px 10px rgb(54 55 122 / 36%);
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: #36377A;
+      font-size: 13px;
+    }
+  }
+}
+
+.comment__viewarea {
+  display: flex;
+  width: 100%;
+  height: 30rem;
+  overflow-y: scroll;
+  flex-direction: column;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  & h2 {
+    font-size: 16px;
+    font-weight: 500;
+    color: #064663;
+  }
+}
+
+.comment__views {
+  background-color: white;
+  padding: 10px 25px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 2px solid #d1cfcf;
+
+  .comment__info {
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+
+    & img {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+    }
+
+    & h4 {
+      font-size: 12px;
+      font-weight: 500;
+      color: #064663;
+    }
+  }
+
+  & p {
+    margin: 3px 1.5px;
+    font-size: 12px;
+  }
+}
+
+/* <========= Footer Styles =========> */
+
+footer{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* <========= Media Queries =========> */
+
+@media screen and (max-width: 550px) {
+  
+  .nav__join button {
+    height: 30px;
+    width: 50px;
+    font-weight: 400;
+  }
+}
