@@ -49,4 +49,4 @@
 [SASS-url]: https://sass-lang.com/
 
 [Firebase]: https://img.shields.io/badge/Firebase-F7EFE5?style=for-the-badge&logo=firebase&logoColor=F2921D
-[Firebase-url]: https://swiperjs.com/
+[Firebase-url]: https://firebase.google.com/
